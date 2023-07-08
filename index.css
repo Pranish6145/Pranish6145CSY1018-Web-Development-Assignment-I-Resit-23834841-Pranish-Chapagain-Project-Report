@@ -88,3 +88,7 @@ body {
     box-sizing: border-box;
     top:110%;
 }
+.container {
+    max-width: 961px;
+    margin: 0 auto;
+}
