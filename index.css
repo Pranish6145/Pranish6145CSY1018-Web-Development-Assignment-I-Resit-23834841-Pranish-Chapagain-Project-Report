@@ -92,3 +92,19 @@ body {
     max-width: 961px;
     margin: 0 auto;
 }
+/*animation for the homepage*/
+@keyframes blink {
+    0% {
+      opacity: -2;
+    }
+    50% {
+      opacity: 2;
+    }
+    100% {
+      opacity: -2;
+    }
+  }
+  
+  .Andrew {
+    animation: blink 1s infinite;
+  }
