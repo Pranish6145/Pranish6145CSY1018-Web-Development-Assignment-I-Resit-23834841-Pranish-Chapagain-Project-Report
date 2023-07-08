@@ -56,3 +56,28 @@ body {
     max-width: 961px;
     margin: 0 auto;
 }
+.grid-container-avenue {
+    padding: 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(301px, 301px));
+    column-gap: 15px;
+    row-gap: 30px;
+    margin-right: 0%;
+    top: 11%;
+    bottom: 100px; /* Adjust this value to create space between images and footer */
+  }
+  
+    /*images on the portfolio page*/
+    .Dew {
+        width: 250px;
+        height: 301px;
+        object-fit: cover;
+        object-position: center;
+        border-radius:10px;
+        border:4px solid black;
+    }
