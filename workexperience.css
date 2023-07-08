@@ -42,10 +42,19 @@ body {
 }
 /* Adjust the work-experience page styles */
 .container-Adam {
-    width: 90%;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    background-color: rgb(25 224 134 / 60%);
+    position: absolute;
+    width: 23%;
+    height: 500px;
+    font-size:15px;
+    border-radius:24px;
+    text-align: center;
+    color:#77098d;
+    box-shadow: 2px 2px 15px;
+    margin: auto;
+    top:23%;
+    left:37%;
+
   }
   .footer {
     position:absolute ;
