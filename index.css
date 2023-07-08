@@ -76,3 +76,15 @@ body {
     color:#2a2049;
     text-decoration: none;
 }
+/*For footer*/
+
+.footer {
+    position:absolute ;
+    background-color: #222;
+    color: #fff;
+    padding: 21px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    top:110%;
+}
