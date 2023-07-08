@@ -1,0 +1,7 @@
+body {
+    margin:0;
+    padding: 0;
+    background-image: url("Images/pexels-jaime-reimer-2662116.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+}
