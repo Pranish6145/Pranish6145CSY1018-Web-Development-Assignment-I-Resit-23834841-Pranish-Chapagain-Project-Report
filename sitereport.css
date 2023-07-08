@@ -40,3 +40,19 @@ body {
     height:3px;
     background-color: #cc2924;
 }
+/*For footer*/
+
+.footer {
+    position:absolute ;
+    background-color: #222;
+    color: #fff;
+    padding: 21px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    top:110%;
+}
+.container {
+    max-width: 961px;
+    margin: 0 auto;
+}
