@@ -40,3 +40,28 @@ body {
     height:3px;
     background-color: #cc2924;
 }
+.SHM {
+    position: absolute;
+    top:58%;
+    left:48%;
+}
+/*For the HireMe Button on the homepage*/
+
+.Annelida {
+    background-color: #97b7ac;
+    border-radius: 20px;
+    border:none;
+    color:blanchedalmond;
+    padding: 16px 33px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 17px;
+}
+
+/*For removing the underline below hire me inside the button in homepage*/
+
+.Annelida a {
+    color:#2a2049;
+    text-decoration: none;
+}
