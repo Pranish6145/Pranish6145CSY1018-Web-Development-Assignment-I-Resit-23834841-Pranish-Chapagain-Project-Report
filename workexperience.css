@@ -4,10 +4,12 @@ body {
     background-image: url("Images/pexels-jaime-reimer-2662116.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     background-attachment: fixed;
+    background-position: center;
+}
+html {
     overflow-x: hidden;
-  }
+}
   
   /* For the navigation bar */
   .Light {
@@ -109,6 +111,7 @@ body {
   
     .Light ul {
       display: none; /* Hide the navigation menu by default */
+      margin-top: 60px;
     }
   
     #menu-toggle:checked ~ .Light ul {

@@ -6,8 +6,10 @@ body {
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position: center;
-    overflow-x: hidden;
   }
+  html {
+  overflow-x: hidden;
+}
   
   .Light {
     top: 0;

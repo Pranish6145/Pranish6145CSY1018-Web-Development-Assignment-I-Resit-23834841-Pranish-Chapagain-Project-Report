@@ -6,6 +6,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
+html {
     overflow-x: hidden;
 }
 
@@ -50,6 +52,7 @@ body {
 }
 
 /* For footer */
+/* For footer */
 .footer {
     position: absolute;
     background-color: #222;
@@ -58,8 +61,9 @@ body {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    bottom:0%;
+    top:110%;
 }
+
 
 .container {
     max-width: 961px;
@@ -79,9 +83,10 @@ body {
     column-gap: 15px;
     row-gap: 30px;
     margin-right: 0%;
-    top: 11%;
-    bottom: 100px; /* Adjust this value to create space between images and footer */
+    top: 15%;
+    bottom: 60px; /* Adjust this value to create space between images and footer */
 }
+
 
 /* For the images on the portfolio page */
 .Dew {
@@ -115,12 +120,13 @@ body {
 
 /* Media query for small screens */
 @media only screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden; /* Prevent horizontal scrolling in mobile view */
+    html {
+        overflow-x: hidden;
     }
 
     .Light ul {
         display: none; /* Hide the navigation menu by default */
+        margin-top: 60px;
     }
 
     #menu-toggle:checked ~ .Light ul {
@@ -153,6 +159,9 @@ body {
         padding: 10px 20px; /* Adjust the padding to make the button smaller */
         font-size: 14px; /* Adjust the font size to make the text smaller */
     }
+    .footer {
+      position: fixed;
+    }
 
     .menu-icon {
         display: block; /* Show the hamburger icon on small screens */
@@ -166,9 +175,4 @@ body {
     #menu-toggle {
         display: none;
     }
-    .footer {
-      bottom: -355%;
-    }
 }
-
-  

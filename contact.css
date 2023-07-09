@@ -6,9 +6,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    overflow-x: hidden;
 }
-
+html {
+    overflow-x: hidden;
+  }
 
 /* For the navigation bar */
 .Light {
@@ -116,14 +117,14 @@ body {
 }
 
 /* Media query for small screens */
+/* Media query for small screens */
 @media only screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden; /* Prevent horizontal scrolling in mobile view */
-        background-attachment: fixed;
-    }
+    /* Other existing CSS rules */
 
     .Light ul {
         display: none; /* Hide the navigation menu by default */
+        margin-top: 60px;
+        overflow-y: visible;
     }
 
     #menu-toggle:checked ~ .Light ul {
@@ -141,7 +142,9 @@ body {
         padding: 10px;
         color: blanchedalmond;
     }
-
+    .Light ul li:first-child {
+        display: block;
+    }
     .menu-icon {
         display: block; /* Show the hamburger icon on small screens */
     }
@@ -159,10 +162,16 @@ body {
     .contact {
         width: 80%;
         left: 10%;
+        top: 30%;
     }
 
     .Trent {
         left: 30%;
         bottom: 5%;
+    }
+
+    /* Additional styles for responsive menu */
+    .Light ul li:first-child {
+        display: block;
     }
 }
