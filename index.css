@@ -60,6 +60,7 @@ body {
     color: blue;
   }
   
+  
   .SHM {
     position: absolute;
     top: 58%;
@@ -132,7 +133,7 @@ body {
     .SHM {
       position: absolute;
       top: 75%; /* Adjust the percentage value to move the button downwards */
-      left: 48%;
+      left: 45%;
     }
   
     .Annelida {
@@ -162,5 +163,15 @@ body {
     #menu-toggle {
       display: none;
     }
+  }
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .Andrew {
+    color: rgb(197, 35, 124);
+    animation: blink 1.5s infinite;
   }
   
