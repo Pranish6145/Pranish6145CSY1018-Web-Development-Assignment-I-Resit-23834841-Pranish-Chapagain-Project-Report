@@ -107,10 +107,10 @@ body {
   @media only screen and (max-width: 768px) {
     /* Mobile styles */
     body {
-        overflow-x: hidden; /* Prevent horizontal scrolling in mobile view */
+        overflow-x: hidden; 
       }
     .Light ul {
-      display: none; /* Hide the navigation menu by default */
+      display: none; /* Hide the navigation menu by  */
     }
   
     #menu-toggle:checked ~ .Light ul {
@@ -139,8 +139,8 @@ body {
     }
   
     .Annelida {
-      padding: 10px 20px; /* Adjust the padding to make the button smaller */
-      font-size: 14px; /* Adjust the font size to make the text smaller */
+      padding: 10px 20px; 
+      font-size: 14px; 
     }
   
     .menu-icon {

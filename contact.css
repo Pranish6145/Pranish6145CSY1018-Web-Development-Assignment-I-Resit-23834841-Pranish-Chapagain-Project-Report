@@ -120,6 +120,9 @@ html {
 /* Media query for small screens */
 @media only screen and (max-width: 768px) {
     /* Other existing CSS rules */
+    body {
+        overflow-x: hidden; 
+      }
 
     .Light ul {
         display: none; /* Hide the navigation menu by default */
