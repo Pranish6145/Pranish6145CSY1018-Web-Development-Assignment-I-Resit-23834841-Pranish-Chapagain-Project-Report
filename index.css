@@ -116,13 +116,25 @@ body {
     .Light ul li {
       margin-left: 0;
       margin-bottom: 10px;
-      display: flexbox;
-      background-color: #cc2924;
     }
   
     .Light ul li a {
       padding: 10px;
-     
+      color: blanchedalmond;
+    }
+    .Wave {
+        left: 30%;
+    }
+  
+    .SHM {
+      position: absolute;
+      top: 75%; /* Adjust the percentage value to move the button downwards */
+      left: 48%;
+    }
+  
+    .Annelida {
+      padding: 10px 20px; /* Adjust the padding to make the button smaller */
+      font-size: 14px; /* Adjust the font size to make the text smaller */
     }
   
     .menu-icon {
