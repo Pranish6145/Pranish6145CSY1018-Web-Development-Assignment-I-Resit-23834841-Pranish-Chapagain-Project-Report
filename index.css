@@ -1,110 +1,151 @@
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     background-image: url("Images/pexels-jaime-reimer-2662116.jpg");
     background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
     overflow-x: hidden;
-}
-/*For the navigation for*/
-.Light {
-    top:0;
-    right:0;
-    width:100%;
-    height:11vh;
-    padding:11px;
+  }
+  
+  .Light {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto; /* Change to auto for responsive height */
+    padding: 11px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-.Light ul {
+  }
+  
+  .Light ul {
     list-style-type: none;
-    padding:0;
+    padding: 0;
     margin: 0;
     display: flex;
-}
-.Light ul li {
+  }
+  
+  .Light ul li {
     margin-left: 11px;
-}
-.Light ul li a {
-    color:#000000;
+  }
+  
+  .Light ul li a {
+    color: #000000;
     text-decoration: none;
-    padding:50px;
+    padding: 50px;
     position: relative;
-}
-.Light ul li a:hover::after {
+  }
+  
+  .Light ul li a:hover::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 30px;
     width: 100%;
-    height:3px;
+    height: 3px;
     background-color: #cc2924;
-}
-.Wave {
+  }
+  
+  .Wave {
     color: #cc2924;
     font-size: xx-large;
     position: absolute;
-    top:23%;
-    left:38%;
-}
-.Andrew {
+    top: 23%;
+    left: 38%;
+  }
+  
+  .Andrew {
     color: blue;
-
-}
-.SHM {
+  }
+  
+  .SHM {
     position: absolute;
-    top:58%;
-    left:48%;
-}
-/*For the HireMe Button on the homepage*/
-
-.Annelida {
+    top: 58%;
+    left: 48%;
+  }
+  
+  .Annelida {
     background-color: #97b7ac;
     border-radius: 20px;
-    border:none;
-    color:blanchedalmond;
+    border: none;
+    color: blanchedalmond;
     padding: 16px 33px;
     text-align: center;
     text-decoration: none;
-    display:inline-block;
+    display: inline-block;
     font-size: 17px;
-}
-
-/*For removing the underline below hire me inside the button in homepage*/
-
-.Annelida a {
-    color:#2a2049;
+  }
+  
+  .Annelida a {
+    color: #2a2049;
     text-decoration: none;
-}
-/*For footer*/
-
-.footer {
-    position:absolute ;
+  }
+  
+  .footer {
+    position: absolute;
     background-color: #222;
     color: #fff;
     padding: 21px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    top:110%;
-}
-.container {
+    top: 110%;
+  }
+  
+  .container {
     max-width: 961px;
     margin: 0 auto;
-}
-/*animation for the homepage*/
-@keyframes blink {
-    0% {
-      opacity: -2;
+  }
+  
+  /* Media queries for responsive design */
+  
+  @media only screen and (max-width: 768px) {
+    /* Mobile styles */
+  
+    .Light ul {
+      display: none; /* Hide the navigation menu by default */
     }
-    50% {
-      opacity: 2;
+  
+    #menu-toggle:checked ~ .Light ul {
+      display: flex; /* Show the navigation menu when the checkbox is checked */
+      flex-direction: column;
+      align-items: flex-start;
     }
-    100% {
-      opacity: -2;
+  
+    .Light ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+      display: flexbox;
+      background-color: #cc2924;
+    }
+  
+    .Light ul li a {
+      padding: 10px;
+     
+    }
+  
+    .menu-icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+    }
+  
+    .menu-icon:hover {
+      background-color: #cc2924;
+    }
+  
+    /* Hide the checkbox */
+    #menu-toggle {
+      display: none;
     }
   }
   
-  .Andrew {
-    animation: blink 1s infinite;
-  }
