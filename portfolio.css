@@ -52,7 +52,7 @@ html {
 }
 
 /* For footer */
-/* For footer */
+
 .footer {
     position: absolute;
     background-color: #222;
@@ -84,7 +84,7 @@ html {
     row-gap: 30px;
     margin-right: 0%;
     top: 15%;
-    bottom: 60px; /* Adjust this value to create space between images and footer */
+    bottom: 60px; 
 }
 
 
@@ -100,7 +100,7 @@ html {
 
 /* For the hamburger menu icon */
 .menu-icon {
-    display: none; /* Hide the hamburger icon by default */
+    display: none; 
     width: 30px;
     height: 30px;
     position: absolute;
@@ -125,12 +125,12 @@ html {
     }
 
     .Light ul {
-        display: none; /* Hide the navigation menu by default */
+        display: none; /* Hides the navigation menu by default */
         margin-top: 60px;
     }
 
     #menu-toggle:checked ~ .Light ul {
-        display: flex; /* Show the navigation menu when the checkbox is checked */
+        display: flex; /* Shows the navigation menu when the checkbox is checked */
         flex-direction: column;
         align-items: flex-start;
     }
@@ -151,21 +151,20 @@ html {
 
     .SHM {
         position: absolute;
-        top: 75%; /* Adjust the percentage value to move the button downwards */
+        top: 75%; 
         left: 48%;
     }
 
     .Annelida {
-        padding: 10px 20px; /* Adjust the padding to make the button smaller */
-        font-size: 14px; /* Adjust the font size to make the text smaller */
+        padding: 10px 20px; 
+        font-size: 14px;
     }
     .footer {
       position: fixed;
     }
 
     .menu-icon {
-        display: block; /* Show the hamburger icon on small screens */
-    }
+        display: block;
 
     .menu-icon:hover {
         background-color: #cc2924;
@@ -175,4 +174,4 @@ html {
     #menu-toggle {
         display: none;
     }
-}
+}}
