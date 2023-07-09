@@ -6,10 +6,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
-html {
+  }
+  
+  html {
     overflow-x: hidden;
-}
+  }
   
   /* For the navigation bar */
   .Light {
@@ -67,40 +68,8 @@ html {
   }
   
   /* Hide the checkbox */
-  #menu-toggle {
+  .menu-toggle {
     display: none;
-  }
-  
-  /* Adjust the work-experience page styles */
-  .container-Adam {
-    background-color: rgb(25 224 134 / 60%);
-    position: absolute;
-    width: 23%;
-    height: 500px;
-    font-size: 15px;
-    border-radius: 24px;
-    text-align: center;
-    color: #77098d;
-    box-shadow: 2px 2px 15px;
-    margin: auto;
-    top: 23%;
-    left: 37%;
-  }
-  
-  .footer {
-    position: absolute;
-    background-color: #222;
-    color: #fff;
-    padding: 21px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    top: 110%;
-  }
-  
-  .container {
-    max-width: 961px;
-    margin: 0 auto;
   }
   
   /* Media query for small screens */
@@ -114,7 +83,7 @@ html {
       margin-top: 60px;
     }
   
-    #menu-toggle:checked ~ .Light ul {
+    .menu-toggle:checked ~ .Light ul {
       display: flex; /* Show the navigation menu when the checkbox is checked */
       flex-direction: column;
       align-items: flex-start;
@@ -139,18 +108,38 @@ html {
     }
   
     /* Hide the checkbox */
-    #menu-toggle {
+    .menu-toggle {
       display: none;
-    }
-  
-    /* Adjust the work-experience page styles for small screens */
-    .container-Adam {
-      width: 70%;
-      left: 10%;
-      font-size: 12px;
-      top: 20%;
-      height: auto;
-      padding: 20px;
     }
   }
   
+  /* For the container and image styles */
+  .container-Eve {
+    background-color: rgba(227, 240, 234, 0.6);
+    position: absolute;
+    width: 35%;
+    height: 750px;
+    font-size: 15px;
+    border-radius: 24px;
+    font-size: medium;
+    text-align: center;
+    color: #77098d;
+    box-shadow: 2px 2px 15px;
+    margin: auto;
+    top: 23%;
+    left: 37%;
+  }
+  
+  .image-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    top: 130%;
+  }
+  .image-container img {
+    max-width: 50%;
+    max-height: 100%;
+    left: 30%;
+  }

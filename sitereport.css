@@ -6,15 +6,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
-    
-
-html {
+  }
+  
+  html {
     overflow-x: hidden;
-}
-
-/* For the navigation bar */
-.Light {
+  }
+  
+  /* For the navigation bar */
+  .Light {
     top: 0;
     right: 0;
     width: 100%;
@@ -23,27 +22,27 @@ html {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.Light ul {
+  }
+  
+  .Light ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-}
-
-.Light ul li {
+  }
+  
+  .Light ul li {
     margin-left: 11px;
-}
-
-.Light ul li a {
+  }
+  
+  .Light ul li a {
     color: #000000;
     text-decoration: none;
     padding: 50px;
     position: relative;
-}
-
-.Light ul li a:hover::after {
+  }
+  
+  .Light ul li a:hover::after {
     content: "";
     position: absolute;
     left: 0;
@@ -51,17 +50,17 @@ html {
     width: 100%;
     height: 3px;
     background-color: #cc2924;
-}
-
-/* For footer */
-.Nepal {
+  }
+  
+  /* For footer */
+  .Nepal {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: calc(89vh - 100px); /* Adjust the minimum height to create more space */
-}
-
-.footer {
+  }
+  
+  .footer {
     position: absolute;
     background-color: #222;
     color: #fff;
@@ -70,15 +69,15 @@ html {
     width: 100%;
     box-sizing: border-box;
     margin-top: 30px;
-    top:330%;
-}
-
-.container {
+    top: 330%;
+  }
+  
+  .container {
     max-width: 961px;
     margin: 0 auto;
-}
-
-.container-Eve {
+  }
+  
+  .container-Eve {
     background-color: rgba(227, 240, 234, 0.6);
     position: absolute;
     width: 35%;
@@ -92,20 +91,94 @@ html {
     margin: auto;
     top: 23%;
     left: 37%;
-}
-
-
-.image-container {
+  }
+  
+  .image-container {
     display: flex;
-    position:absolute;
+    position: absolute;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    top:130%;
+    top: 130%;
   }
   
   .image-container img {
     max-width: 30%;
     max-height: 100%;
+  }
+  
+  /* Media queries for responsive design */
+  
+  @media only screen and (max-width: 768px) {
+    /* Mobile styles */
+    body {
+      overflow-x: hidden; /* Prevent horizontal scrolling in mobile view */
+    }
+  
+    .Light ul {
+      display: none; /* Hide the navigation menu by default */
+      margin-top: 60px;
+    }
+  
+    #menu-toggle:checked ~ .Light ul {
+      display: flex; /* Show the navigation menu when the checkbox is checked */
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .Light ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .Light ul li a {
+      padding: 10px;
+      color: blanchedalmond;
+    }
+  
+    .menu-icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+    }
+  
+    .menu-icon:hover {
+      background-color: #cc2924;
+    }
+  
+    /* Hide the checkbox */
+    #menu-toggle {
+      display: none;
+    }
+  
+    /* Adjust container-Eve width for mobile */
+    .container-Eve {
+      width: 80%;
+      left: 10%;
+      height:180%;
+    }
+  
+    /* Adjust image-container positioning for mobile */
+    .image-container {
+      top: 220%;
+    }
+    .image-container img {
+        max-width: 60%;
+        max-height: 150%;
+    }
+  
+    /* Adjust footer positioning for mobile */
+    .footer {
+      top: 230%;
+    }
+    
   }
   
