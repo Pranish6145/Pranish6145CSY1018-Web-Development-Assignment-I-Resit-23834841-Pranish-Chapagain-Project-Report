@@ -102,7 +102,9 @@ body {
   
   @media only screen and (max-width: 768px) {
     /* Mobile styles */
-  
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling in mobile view */
+      }
     .Light ul {
       display: none; /* Hide the navigation menu by default */
     }

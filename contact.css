@@ -1,66 +1,88 @@
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     background-image: url("Images/pexels-jaime-reimer-2662116.jpg");
     background-size: cover;
     overflow-x: hidden;
 }
-/*For the navigation for*/
+
+/* For the navigation bar */
 .Light {
-    top:0;
-    right:0;
-    width:100%;
-    height:11vh;
-    padding:11px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 11vh;
+    padding: 11px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .Light ul {
     list-style-type: none;
-    padding:0;
+    padding: 0;
     margin: 0;
     display: flex;
 }
+
 .Light ul li {
     margin-left: 11px;
 }
+
 .Light ul li a {
-    color:#000000;
+    color: #000000;
     text-decoration: none;
-    padding:50px;
+    padding: 50px;
     position: relative;
 }
+
 .Light ul li a:hover::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 30px;
     width: 100%;
-    height:3px;
+    height: 3px;
     background-color: #cc2924;
 }
-/*For the div for the contact in contact page*/
 
-.contact {
-    background-color: rgb(25 224 161 / 60%);
+/* For the hamburger menu icon */
+.menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    width: 25%;
-    height: 500px;
-    font-size:20px;
-    border-radius:24px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
     text-align: center;
-    color:#9600b5;
-    box-shadow: 2px 2px 15px;
-    margin: auto;
-    top:23%;
-    left:37%;
-
-
+    line-height: 30px;
+    color: #fff;
 }
 
-/*For the button on the contact page*/
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
 
+/* For the contact form */
+.contact {
+    background-color: rgba(25, 224, 161, 0.6);
+    position: absolute;
+    width: 25%;
+    height: auto;
+    font-size: 20px;
+    border-radius: 24px;
+    text-align: center;
+    color: #9600b5;
+    box-shadow: 2px 2px 15px;
+    margin: auto;
+    top: 23%;
+    left: 37%;
+}
+
+/* For the button on the contact page */
 .Trent {
     background-color: #9017ae;
     display: inline-block;
@@ -68,24 +90,63 @@ body {
     padding: 12px 12px;
     position: absolute;
     font-size: x-large;
-    cursor:pointer;
-    left:37%;
-    bottom:3%;
-    
+    cursor: pointer;
+    left: 37%;
+    bottom: 3%;
 }
-/*For footer*/
 
+/* For footer */
 .footer {
-    position:absolute ;
+    position: relative;
     background-color: #222;
     color: #fff;
     padding: 21px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    top:110%;
+    margin-top: auto;
 }
+
 .container {
     max-width: 961px;
     margin: 0 auto;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling in mobile view */
+    }
+
+    .Light ul {
+        display: none; /* Hide the navigation menu by default */
+    }
+
+    #menu-toggle:checked ~ .Light ul {
+        display: flex; /* Show the navigation menu when the checkbox is checked */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Light ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .Light ul li a {
+        padding: 10px;
+        color: blanchedalmond;
+    }
+
+    .contact {
+        width: 90%;
+        left: 5%;
+        top: 15%;
+        height: auto;
+    }
+
+    .Trent {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
