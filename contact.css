@@ -3,8 +3,12 @@ body {
     padding: 0;
     background-image: url("Images/pexels-jaime-reimer-2662116.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     overflow-x: hidden;
 }
+
 
 /* For the navigation bar */
 .Light {
@@ -48,7 +52,7 @@ body {
 
 /* For the hamburger menu icon */
 .menu-icon {
-    display: block;
+    display: none; /* Hide the hamburger icon by default */
     width: 30px;
     height: 30px;
     position: absolute;
@@ -68,10 +72,10 @@ body {
 
 /* For the contact form */
 .contact {
-    background-color: rgba(25, 224, 161, 0.6);
+    background-color: rgb(25 224 161 / 60%);
     position: absolute;
     width: 25%;
-    height: auto;
+    height: 500px;
     font-size: 20px;
     border-radius: 24px;
     text-align: center;
@@ -82,7 +86,6 @@ body {
     left: 37%;
 }
 
-/* For the button on the contact page */
 .Trent {
     background-color: #9017ae;
     display: inline-block;
@@ -97,14 +100,14 @@ body {
 
 /* For footer */
 .footer {
-    position: relative;
+    position: absolute;
     background-color: #222;
     color: #fff;
     padding: 21px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    margin-top: auto;
+    top: 110%;
 }
 
 .container {
@@ -112,10 +115,11 @@ body {
     margin: 0 auto;
 }
 
-/* Media queries for responsive design */
+/* Media query for small screens */
 @media only screen and (max-width: 768px) {
     body {
         overflow-x: hidden; /* Prevent horizontal scrolling in mobile view */
+        background-attachment: fixed;
     }
 
     .Light ul {
@@ -138,15 +142,27 @@ body {
         color: blanchedalmond;
     }
 
+    .menu-icon {
+        display: block; /* Show the hamburger icon on small screens */
+    }
+
+    .menu-icon:hover {
+        background-color: #cc2924;
+    }
+
+    /* Hide the checkbox */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Adjust the contact form styles for small screens */
     .contact {
-        width: 90%;
-        left: 5%;
-        top: 15%;
-        height: auto;
+        width: 80%;
+        left: 10%;
     }
 
     .Trent {
-        left: 50%;
-        transform: translateX(-50%);
+        left: 30%;
+        bottom: 5%;
     }
 }
