@@ -1,61 +1,111 @@
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     background-image: url("Images/pexels-jaime-reimer-2662116.jpg");
     background-size: cover;
-    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
+    
+
 html {
     overflow-x: hidden;
-  }
-/*For the navigation for*/
+}
+
+/* For the navigation bar */
 .Light {
-    top:0;
-    right:0;
-    width:100%;
-    height:11vh;
-    padding:11px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 11vh;
+    padding: 11px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .Light ul {
     list-style-type: none;
-    padding:0;
+    padding: 0;
     margin: 0;
     display: flex;
 }
+
 .Light ul li {
     margin-left: 11px;
 }
+
 .Light ul li a {
-    color:#000000;
+    color: #000000;
     text-decoration: none;
-    padding:50px;
+    padding: 50px;
     position: relative;
 }
+
 .Light ul li a:hover::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 30px;
     width: 100%;
-    height:3px;
+    height: 3px;
     background-color: #cc2924;
 }
-/*For footer*/
+
+/* For footer */
+.Nepal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(89vh - 100px); /* Adjust the minimum height to create more space */
+}
 
 .footer {
-    position:absolute ;
+    position: absolute;
     background-color: #222;
     color: #fff;
     padding: 21px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    top:110%;
+    margin-top: 30px;
+    top:330%;
 }
+
 .container {
     max-width: 961px;
     margin: 0 auto;
 }
+
+.container-Eve {
+    background-color: rgba(227, 240, 234, 0.6);
+    position: absolute;
+    width: 35%;
+    height: 750px;
+    font-size: 15px;
+    border-radius: 24px;
+    font-size: medium;
+    text-align: center;
+    color: #77098d;
+    box-shadow: 2px 2px 15px;
+    margin: auto;
+    top: 23%;
+    left: 37%;
+}
+
+
+.image-container {
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    top:130%;
+  }
+  
+  .image-container img {
+    max-width: 30%;
+    max-height: 100%;
+  }
+  
